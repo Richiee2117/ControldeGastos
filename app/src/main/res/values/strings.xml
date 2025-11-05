@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Control de Gastos</string>
+    <string name="total_ingresos">Total Ingresos</string>
+    <string name="total_gastos">Total Gastos</string>
+    <string name="balance">Balance</string>
+    <string name="agregar_movimiento">Agregar Movimiento</string>
+    <string name="registrar_movimiento">Registrar Movimiento</string>
+    <string name="monto">Monto</string>
+    <string name="descripcion">Descripción</string>
+    <string name="tipo">Tipo</string>
+    <string name="ingreso">Ingreso</string>
+    <string name="gasto">Gasto</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="campos_vacios">Por favor, completa todos los campos</string>
+    <string name="movimiento_guardado">Movimiento guardado exitosamente</string>
+    <string name="filtrar_por">Filtrar por:</string>
+    <string name="todos">Todos</string>
+    <string name="ver_graficos">Ver Gráficos</string>
+    <string name="graficos">Gráficos</string>
+    <string name="gastos_hormiga_title">¡Alerta de Gastos Hormiga!</string>
+    <string name="gastos_hormiga_mensaje">Cuida tu cartera de los gastos hormiga llevas %d en el día</string>
+    <string name="gastos_hormiga_semana">Cuida tu cartera de los gastos hormiga llevas %d en la semana</string>
+    <string name="entendido">Entendido</string>
+    <string name="porcentaje_gastos_hormiga">Porcentaje de Gastos Hormiga: %.1f%%</string>
+</resources>
