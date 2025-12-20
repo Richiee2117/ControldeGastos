@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nuevo tema de aplicación - Colores principales -->
+    <!-- Azul Profundo / Marino: Color Principal -->
+    <color name="primary">#2C3E50</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#34495E</color>
+    <color name="on_primary_container">#FFFFFF</color>
+    
+    <!-- Verde Menta / Aguamarina Suave: Color Secundario -->
+    <color name="secondary">#2ECC71</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#27AE60</color>
+    <color name="on_secondary_container">#FFFFFF</color>
+    
+    <!-- Naranja Suave / Coral: Color de Énfasis/Alerta -->
+    <color name="tertiary">#E67E22</color>
+    <color name="on_tertiary">#FFFFFF</color>
+    <color name="tertiary_container">#D35400</color>
+    <color name="on_tertiary_container">#FFFFFF</color>
+    
+    <!-- Gris Claro / Platino: Color Neutro -->
+    <color name="background">#ECF0F1</color>
+    <color name="on_background">#34495E</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="on_surface">#34495E</color>
+    
+    <!-- Gris Carbón / Oscuro: Color Neutro Oscuro -->
+    <color name="surface_variant">#BDC3C7</color>
+    <color name="on_surface_variant">#34495E</color>
+    
+    <color name="outline">#95A5A6</color>
+    <color name="outline_variant">#BDC3C7</color>
+    
+    <!-- Error colors -->
+    <color name="error">#E74C3C</color>
+    <color name="on_error">#FFFFFF</color>
+    <color name="error_container">#C0392B</color>
+    <color name="on_error_container">#FFFFFF</color>
+    
+    <!-- Income & Expense Colors -->
+    <color name="income_color">#2ECC71</color>
+    <color name="expense_color">#E67E22</color>
+    <color name="balance_color">#2C3E50</color>
+    
+    <!-- Legacy colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Dark theme colors -->
+    <color name="background_dark">#1A1A1A</color>
+    <color name="on_background_dark">#ECF0F1</color>
+    <color name="surface_dark">#2C2C2C</color>
+    <color name="on_surface_dark">#ECF0F1</color>
+    <color name="surface_variant_dark">#444444</color>
+    <color name="on_surface_variant_dark">#BDC3C7</color>
+    
+    <!-- Icon background colors -->
+    <color name="icon_background_light">#F5F5F5</color>
+    <color name="icon_background_dark">#3A3A3A</color>
+</resources>

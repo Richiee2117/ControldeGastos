@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- App Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.ControlDeGastos"
+        android:fitsSystemWindows="true"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            android:minHeight="?attr/actionBarSize"
+            app:title="@string/app_name"
+            app:titleTextColor="@color/on_primary" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- ScrollView para tarjetas y botones -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Ingresos Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardIngresos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:strokeWidth="0dp"
+                app:cardBackgroundColor="@color/secondary_container"
+                app:rippleColor="@color/secondary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/total_ingresos"
+                            android:textSize="15sp"
+                            android:textColor="@color/on_secondary_container"
+                            android:letterSpacing="0.02" />
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ingresos"
+                            android:contentDescription="@string/total_ingresos"
+                            android:scaleType="fitCenter"
+                            android:alpha="0.9" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvTotalIngresos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$0.00"
+                        android:textSize="36sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/on_secondary_container"
+                        android:letterSpacing="0.01" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Gastos Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardGastos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:strokeWidth="0dp"
+                app:cardBackgroundColor="@color/tertiary_container"
+                app:rippleColor="@color/tertiary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/total_gastos"
+                            android:textSize="15sp"
+                            android:textColor="@color/on_tertiary_container"
+                            android:letterSpacing="0.02" />
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/pobre"
+                            android:contentDescription="@string/total_gastos"
+                            android:scaleType="fitCenter"
+                            android:alpha="0.9" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvTotalGastos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$0.00"
+                        android:textSize="36sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/on_tertiary_container"
+                        android:letterSpacing="0.01" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Balance Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:strokeWidth="0dp"
+                app:cardBackgroundColor="@color/primary_container">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/balance"
+                            android:textSize="15sp"
+                            android:textColor="@color/on_primary_container"
+                            android:letterSpacing="0.02" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="="
+                            android:textSize="24sp"
+                            android:textColor="@color/on_primary_container"
+                            android:alpha="0.7" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$0.00"
+                        android:textSize="36sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/on_primary_container"
+                        android:letterSpacing="0.01" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Navigation Bar con botones -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <!-- Botón Agregar Movimiento -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnAgregar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/agregar_movimiento"
+                        android:textSize="16sp"
+                        android:paddingTop="18dp"
+                        android:paddingBottom="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:letterSpacing="0.01"
+                        app:cornerRadius="14dp"
+                        app:icon="@android:drawable/ic_input_add"
+                        app:iconGravity="textStart"
+                        app:iconPadding="8dp" />
+
+                    <!-- Botón Ver Gráficos -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnGraficos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ver_graficos"
+                        android:textSize="16sp"
+                        android:paddingTop="18dp"
+                        android:paddingBottom="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:letterSpacing="0.01"
+                        app:cornerRadius="14dp"
+                        app:icon="@android:drawable/ic_menu_sort_by_size"
+                        app:iconGravity="textStart"
+                        app:iconPadding="8dp" />
+
+                    <!-- Botón Membresías -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnMembresias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ver_membresias"
+                        android:textSize="16sp"
+                        android:paddingTop="18dp"
+                        android:paddingBottom="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:letterSpacing="0.01"
+                        app:cornerRadius="14dp"
+                        app:icon="@android:drawable/ic_menu_agenda"
+                        app:iconGravity="textStart"
+                        app:iconPadding="8dp" />
+
+                    <!-- Botón Balance Semanal -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnBalanceSemanal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/balance_semanal"
+                        android:textSize="16sp"
+                        android:paddingTop="18dp"
+                        android:paddingBottom="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:letterSpacing="0.01"
+                        app:cornerRadius="14dp"
+                        app:icon="@android:drawable/ic_menu_today"
+                        app:iconGravity="textStart"
+                        app:iconPadding="8dp" />
+
+                    <!-- Botón Ver Movimientos -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnMovimientos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/movimientos_recientes"
+                        android:textSize="16sp"
+                        android:paddingTop="18dp"
+                        android:paddingBottom="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:letterSpacing="0.01"
+                        app:cornerRadius="14dp"
+                        app:icon="@android:drawable/ic_menu_sort_by_size"
+                        app:iconGravity="textStart"
+                        app:iconPadding="8dp" />
+
+                    <!-- Botón Recomendaciones -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRecomendaciones"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/recomendaciones"
+                        android:textSize="16sp"
+                        android:paddingTop="18dp"
+                        android:paddingBottom="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:letterSpacing="0.01"
+                        app:cornerRadius="14dp"
+                        app:icon="@android:drawable/ic_menu_help"
+                        app:iconGravity="textStart"
+                        app:iconPadding="8dp" />
+
+                    <!-- Botón Configuración -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnConfiguracion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/configuracion"
+                        android:textSize="16sp"
+                        android:paddingTop="18dp"
+                        android:paddingBottom="18dp"
+                        android:letterSpacing="0.01"
+                        app:cornerRadius="14dp"
+                        app:icon="@android:drawable/ic_menu_preferences"
+                        app:iconGravity="textStart"
+                        app:iconPadding="8dp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

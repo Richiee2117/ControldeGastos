@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo para TextInputLayout mejorado -->
+    <style name="Widget.ControlDeGastos.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxBackgroundColor">@color/surface</item>
+        <item name="hintTextColor">@color/on_surface_variant</item>
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="android:textColorHint">@color/on_surface_variant</item>
+    </style>
+
+    <!-- Estilo para Spinner mejorado -->
+    <style name="Widget.ControlDeGastos.Spinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:padding">18dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:background">@drawable/bg_spinner</item>
+    </style>
+
+    <!-- Estilo para MaterialButton mejorado -->
+    <style name="Widget.ControlDeGastos.Button" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">16dp</item>
+        <item name="android:paddingTop">18dp</item>
+        <item name="android:paddingBottom">18dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="iconPadding">8dp</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <!-- Estilo para ShapeableImageView de membresías -->
+    <style name="ShapeAppearanceOverlay.MembershipCard" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+</resources>
